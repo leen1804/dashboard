@@ -25,10 +25,10 @@ function AppointmentsTable() {
     "text-white",
   ];
   return (
-    <section className="mt-16">
+    <section className="mt-16 rounded-b-lg outline-backy outline-offset-2 outline-1 outline">
       <table className="min-w-full overflow-hidden text-white rounded-lg shadow-lg">
         <thead>
-          <tr className="text-sm font-light text-left text-gray-400 border-white bg-customDark">
+          <tr className="text-sm font-light text-left text-gray-400 bg-customDark">
             <th className="px-3 py-5">Student</th>
             <th className="px-2 py-5">Date</th>
             <th className="px-3 py-5">Status</th>

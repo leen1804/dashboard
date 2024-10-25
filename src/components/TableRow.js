@@ -1,8 +1,11 @@
 import React from "react";
 
 function TableRow({ appointment, bgColor, textColor }) {
+  const rowBgColor = appointment.student === "Candice Wu"|| appointment.student === "Drew Cano" 
+    ? "bg-backy" 
+    : " bg-back"; 
   return (
-    <tr className="border-none ">
+    <tr className={`border-none ${rowBgColor} text-white`}>
       <td className="px-4 py-3">
         <div className="flex items-center space-x-2">
           <div className={`flex items-center justify-center w-8 h-8 ${bgColor} ${textColor} rounded-full`}>
